@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 20% 97%;
+    --foreground: 220 30% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 30% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 30% 10%;
+
+    --primary: 230 65% 52%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 15% 92%;
+    --secondary-foreground: 220 30% 15%;
+
+    --muted: 220 15% 94%;
+    --muted-foreground: 220 10% 46%;
+
+    --accent: 220 15% 92%;
+    --accent-foreground: 220 30% 15%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 88%;
+    --input: 220 15% 88%;
+    --ring: 230 65% 52%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 225 25% 12%;
+    --sidebar-foreground: 220 15% 85%;
+    --sidebar-primary: 230 65% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 225 20% 18%;
+    --sidebar-accent-foreground: 220 15% 90%;
+    --sidebar-border: 225 20% 20%;
+    --sidebar-ring: 230 65% 52%;
+
+    /* PII category colors */
+    --pii-name: 340 75% 55%;
+    --pii-email: 200 80% 50%;
+    --pii-phone: 160 60% 45%;
+    --pii-ssn: 30 90% 55%;
+    --pii-address: 270 60% 55%;
+    --pii-date: 50 80% 50%;
+    --pii-financial: 15 85% 50%;
+    --pii-id: 190 60% 45%;
+    --success: 152 60% 42%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+  }
+
+  .dark {
+    --background: 225 25% 8%;
+    --foreground: 220 15% 90%;
+
+    --card: 225 22% 11%;
+    --card-foreground: 220 15% 90%;
+
+    --popover: 225 22% 11%;
+    --popover-foreground: 220 15% 90%;
+
+    --primary: 230 65% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 225 20% 18%;
+    --secondary-foreground: 220 15% 90%;
+
+    --muted: 225 18% 16%;
+    --muted-foreground: 220 10% 55%;
+
+    --accent: 225 20% 18%;
+    --accent-foreground: 220 15% 90%;
+
+    --destructive: 0 62% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 225 18% 18%;
+    --input: 225 18% 18%;
+    --ring: 230 65% 60%;
+
+    --sidebar-background: 225 30% 6%;
+    --sidebar-foreground: 220 15% 80%;
+    --sidebar-primary: 230 65% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 225 25% 12%;
+    --sidebar-accent-foreground: 220 15% 90%;
+    --sidebar-border: 225 25% 12%;
+    --sidebar-ring: 230 65% 60%;
+
+    --pii-name: 340 70% 60%;
+    --pii-email: 200 75% 55%;
+    --pii-phone: 160 55% 50%;
+    --pii-ssn: 30 85% 58%;
+    --pii-address: 270 55% 60%;
+    --pii-date: 50 75% 55%;
+    --pii-financial: 15 80% 55%;
+    --pii-id: 190 55% 50%;
+    --success: 152 55% 48%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 88% 55%;
+    --warning-foreground: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
